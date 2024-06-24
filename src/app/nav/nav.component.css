@@ -1,0 +1,9 @@
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+.menu-icon {
+    transform: scale(1.8)
+}
