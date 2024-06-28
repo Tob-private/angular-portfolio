@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "name": "Internz",
+            "desc": "Me and a group of classmates worked together to develop a website where companies would create internship ads for students to apply to. It was a FERN stack, using Typescript for more robust code,  Redux for state management and Tailwind for styling.",
+            "image": "internz.png"
+        },
+        {
+            "name": "Quire",
+            "desc": "Me and  a group of classmates worked together to develop a digital notebook website. The highlight of this project was to work using the agile methodology, which fit us all well. We learnt how to communicate with each other in an efficient way, and learnt to deal with obstacles in our way",
+            "image": "quire.png"
+        },
+        {
+            "name": "Green Hero",
+            "desc": "At the end of my first year on Chas Academy, me and a group of classmates were paired up with other students from different classes for a project. This project was supposed to mimic the real world, in how UX/UI designers, Developers and DevOps work together, giving each class deeper insight into the other classes and what they have learned",
+            "image": "icons/green-hero-icon.png"
+        },
+        {
+            "name": "PDF Refactoring",
+            "desc": "During my internship at Clira, I was tasked with improving the stability and performance of their PDF exports, as new opportunities presented themselves. As we moved to a new infrastructure, using Gotenberg, I was responsible for refactoring the system we used to convert blade templates to PDFs.",
+            "image": "icons/pdf-file-icon.svg"
+        },
+        {
+            "name": "Portfolio",
+            "desc": "After my education at Chas Academy ended, I decided to learn a new framework and make something with it. That \"something\" turned into this portfolio website.",
+            "image": "briefcase.jpg"
+        }
+    ]
+}
