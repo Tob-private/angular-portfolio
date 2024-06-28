@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavComponent } from '../nav/nav.component';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-main',
@@ -9,5 +10,6 @@ import { NavComponent } from '../nav/nav.component';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-
+  private headerService = inject(HeaderService);
+  headerText: string = this.headerService.headerText
 }
