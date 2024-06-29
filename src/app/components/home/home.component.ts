@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { ProjectsService } from '../../services/projects.service';
 import { ProjectType } from '../../types/project.types';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,8 @@ export class HomeComponent implements OnInit {
   async ngOnInit() {
     await this.projectsService.fetchProjects()
     this.projects = this.projectsService.projects
-    console.log(this.projects);
+    this.projects = this.projectsService.shuffleProjects(this.projects)
+    this.projects = this.projects.slice(0, 3)
     
   }
 
