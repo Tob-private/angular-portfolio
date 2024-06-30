@@ -1,14 +1,14 @@
 {
     "projects": [
         {
-            "name": "Internz",
-            "desc": "Me and a group of classmates worked together to develop a website where companies would create internship ads for students to apply to. It was a FERN stack, using Typescript for more robust code,  Redux for state management and Tailwind for styling.",
-            "image": "internz.png"
+            "name": "Quire",
+            "desc": "My first real project was a group project with 3 classmates. The project's main task was to create a digital notepad website, and subsequently adding features like saving notes, create new notes, textformating, and more",
+            "image": "quire.png"
         },
         {
-            "name": "Quire",
-            "desc": "Me and  a group of classmates worked together to develop a digital notebook website. The highlight of this project was to work using the agile methodology, which fit us all well. We learnt how to communicate with each other in an efficient way, and learnt to deal with obstacles in our way",
-            "image": "quire.png"
+            "name": "Internz",
+            "desc": "In the midst of our React course of my education at Chas Academy, me and a group of classmates were assigned a project to help students find internships, also known as \"LIA\" (Learning While Working).",
+            "image": "internz.png"
         },
         {
             "name": "Green Hero",
@@ -17,7 +17,7 @@
         },
         {
             "name": "PDF Refactoring",
-            "desc": "During my internship at Clira, I was tasked with improving the stability and performance of their PDF exports, as new opportunities presented themselves. As we moved to a new infrastructure, using Gotenberg, I was responsible for refactoring the system we used to convert blade templates to PDFs.",
+            "desc": "During my internship at Clira, I was tasked with improving the stability and performance of their PDF exports, as new opportunities presented themselves. As we moved to a new infrastructure, I was responsible for refactoring the system we used to generate PDFs.",
             "image": "icons/pdf-file-icon.svg"
         },
         {
