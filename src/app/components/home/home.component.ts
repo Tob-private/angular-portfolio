@@ -6,11 +6,12 @@ import { ProjectType } from '../../types/project.types';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, ProjectCardComponent, RouterLink, RouterLinkActive],
+  imports: [FooterComponent, ProjectCardComponent, RouterLink, RouterLinkActive, MatButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,8 +1,6 @@
 header {
-    
+    padding: 40px 0;
 }
-
-video {}
 
 h1 {
     width: 70%;
@@ -12,6 +10,10 @@ h1 {
 main {
     width: 90%;
     margin: 50px auto;
+}
+
+main>* {
+    margin-bottom: 100px;
 }
 
 #intro {
@@ -33,11 +35,11 @@ main {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        ". title ."
-        ". text ."
-        "showcase showcase showcase";
+        ". title . ."
+        ". text . ."
+        "showcase showcase showcase showcase";
     padding: 10px;
 
 }
@@ -60,4 +62,26 @@ main {
     gap: 20px;
     padding: 10px;
     margin: auto;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". . title ."
+    ". . button .";
+    text-align: end;
+}
+
+#contact>h2 {
+    grid-area: title;
+}
+
+#contact>button {
+    grid-area: button;
+    color: var(--link-color);
+    font-size: 1.2rem;
+    width: 40%;
+    margin-left: 50%;
+    padding: 40px 0;
 }
