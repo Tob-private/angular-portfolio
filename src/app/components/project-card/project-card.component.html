@@ -1,5 +1,5 @@
-<section>
+<section routerLink="/projects" routerLinkActive="projects">
     <h4>{{project.name}}</h4>
-    <p>{{project.desc}}</p>
+    <p>{{project.desc | truncate:150}}</p>
     <img src={{project.image}} alt="{{project.name}} image">
 </section>

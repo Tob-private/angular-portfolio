@@ -5,11 +5,12 @@ import { ProjectsService } from '../../services/projects.service';
 import { ProjectType } from '../../types/project.types';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { CommonModule, NgFor } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, ProjectCardComponent],
+  imports: [FooterComponent, ProjectCardComponent, RouterLink, RouterLinkActive],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

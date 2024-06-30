@@ -1,4 +1,57 @@
-.projects {
+header {
+    
+}
+
+video {}
+
+h1 {
+    width: 70%;
+    margin-left: 3%;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "title .."
+        "text ..";
+    padding: 10px;
+}
+
+#intro>h2 {
+    grid-area: title;
+}
+
+#intro>p {
+    grid-area: text;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ". title ."
+        ". text ."
+        "showcase showcase showcase";
+    padding: 10px;
+
+}
+
+#projects>h2 {
+    grid-area: title;
+}
+
+#projects>p {
+    grid-area: text;
+}
+
+#showcase {
+    grid-area: showcase;
     width: 90%;
     display: flex;
     flex-flow: row wrap;

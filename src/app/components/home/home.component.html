@@ -6,24 +6,29 @@
 <main>
     <section id="intro">
         <h2>I am...</h2>
-        <p>...a 21 year young boy, named Tobias, looking interested in everything web development related. This
+        <p>
+            ...a 21 year young boy, named Tobias, looking interested in everything web development related. This
             portfolio is, for example, my first attempt at using Angular in a project. My primary work is currently in
             web development, but I want to eventually branch out to other parts of programming, for example DevOps and
-            Game Development</p>
+            Game Development. You can read more about me <a routerLink="/about" routerLinkActive="about">here</a>.
+        </p>
     </section>
-
     <section id="projects">
         <h2>I have...</h2>
-        <p>...been a part of several projects. These come from my education, work experience and own projects. Here are some of them:</p>
-        <div class="projects">
+        <p>
+            ...been a part of several projects. These come from my education, work experience and own projects. They all
+            use different technologies and frameworks, some using popular stacks like MERN, and some using raw
+            JavaScript, CSS and HTML. Here are some of them:
+        </p>
+        <div id="showcase">
             @defer (on viewport){
-                @for (project of projects; track project.name) {
-                    <app-project-card [project]="project"></app-project-card>
-                }
+            @for (project of projects; track project.name) {
+            <app-project-card [project]="project"></app-project-card>
+            }
             } @placeholder {
-                <p>Future comments</p>
-            } @loading (minimum 1s){
-                <h4>Loading projects...</h4>
+            <p>Future comments</p>
+            } @loading (minimum 100ms) {
+            <h4>Loading projects...</h4>
             }
         </div>
     </section>
