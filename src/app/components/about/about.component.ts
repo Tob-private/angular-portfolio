@@ -23,9 +23,6 @@ export class AboutComponent {
     const response = await fetch('assets/json/about.json');
     const json = await response.json();
 
-    this.educations = json.education;
-    this.experiences = json.experiences;
-    this.goals = json.goals;
-    this.interests = json.interests;
+    ({ education: this.educations, experience: this.experiences, goals: this.goals, interests: this.interests } = json);
   }
 }
