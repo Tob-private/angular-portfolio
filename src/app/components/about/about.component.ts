@@ -21,9 +21,7 @@ export class AboutComponent {
   generateRandomFact = (): void => {
     const randomNumber: number = Math.floor(Math.random() * this.randomFacts.length)
     this.randomizedFact = this.randomFacts[randomNumber]
-    console.log(this.randomizedFact);
   }
-  
   
   constructor(public headerService: HeaderService) {
     this.headerService.setHeaderText('Me and my story');
@@ -32,8 +30,8 @@ export class AboutComponent {
   async ngOnInit() {
     const response = await fetch('assets/json/about.json');
     const json = await response.json();
-
     ({ educations: this.educations, experiences: this.experiences, goals: this.goals, interests: this.interests, randomFacts: this.randomFacts } = json);
+
     this.generateRandomFact()
   }
 }
