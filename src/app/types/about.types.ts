@@ -13,3 +13,5 @@ export interface EducationType extends GoalType {
 export interface ExperienceType extends GoalType {
     duration: string
 }
+
+export type RandomFactType = Array<string>
