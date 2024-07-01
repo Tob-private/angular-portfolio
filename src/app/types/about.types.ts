@@ -2,6 +2,7 @@ export interface GoalType {
     id: string
     title: string
     desc: string
+    image: string
 }
 
 export interface InterestType extends GoalType{}
