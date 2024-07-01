@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   projects: Array<ProjectType> = []
 
   constructor(public headerService: HeaderService, public projectsService: ProjectsService) {
-    this.headerService.setHeaderText("Welcome to my Portfolio");
+    this.headerService.setHeaderText('Welcome to my Portfolio');
   }
 
   async ngOnInit() {
@@ -27,7 +27,5 @@ export class HomeComponent implements OnInit {
     this.projects = this.projectsService.projects
     this.projects = this.projectsService.shuffleProjects(this.projects)
     this.projects = this.projects.slice(0, 3)
-    
   }
-
 }

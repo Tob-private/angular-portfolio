@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
 })
 export class HeaderService {
-    headerText: string = ""
+    private headerTextSubject: BehaviorSubject<string> = new BehaviorSubject<string>('default header text');
 
-    setHeaderText = (text: string): void => {
-        this.headerText = text;
+    headerText$: Observable<string> = this.headerTextSubject.asObservable();
+
+    setHeaderText = (newHeaderText: string): void => {
+        this.headerTextSubject.next(newHeaderText);
     }
 }
