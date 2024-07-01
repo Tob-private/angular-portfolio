@@ -1,71 +1,71 @@
 <main>
     <section id="education">
         <h2>Education</h2>
-
-        <article id="nti">
-            <h3>NTI Stockholm, Stockholm - El och Energi(IT)</h3>
-            <h4>August 2019 - June 2022</h4>
-            <p>
-                During my time at NTI Stockholm, I specialized in web development. This period marked the beginning of
-                my interest in web development, where I learned the basics and foundational skills that have been
-                crucial in my journey.
-            </p>
+        @defer (on viewport){
+        @for (education of educations; track education.title) {
+        <article [id]="education.id">
+            <h3>{{education.title}}</h3>
+            <h4>{{education.duration}}</h4>
+            <p>{{education.desc}}</p>
         </article>
-
-        <article id="chas-academy">
-            <h3>Chas Academy, Stockholm - Fullstack JavaScript</h3>
-            <h4>August 2022 - June 2024</h4>
-            <p>
-                I studied at Chas Academy's Fullstack JavaScript program. The coursework included learning and mastering
-                agile development methodologies, working with frameworks such as React and Vue.js, and server-side
-                development using Node.js with Express.js. I also gained experience with databases like MongoDB and
-                MySQL, aswell as TypeScript, and developing APIs.
-            </p>
-        </article>
+        }
+        } @placeholder {
+        <p></p>
+        } @loading (minimum 100ms) {
+        <h4>Loading educations...</h4>
+        }
     </section>
 
     <section id="work">
         <h2>Work Experience</h2>
 
-        <article id="clira">
-            <h3>Clira, Stockholm - Fullstack Developer, Internship</h3>
-            <h4>January 2024 - May 2024</h4>
-            <p>
-                During my internship at Clira, I was responsible for complex problem-solving tasks, maintaining
-                data-export functionalities, and rewriting and restructuring large parts of the existing codebase. I
-                also refactored code to fit into a new infrastructure, enhancing the overall efficiency and performance
-                of their systems.
-            </p>
+        @defer (on viewport){
+        @for (experience of experiences; track experience.title) {
+        <article [id]="experience.id">
+            <h3>{{experience.title}}</h3>
+            <h4>{{experience.duration}}</h4>
+            <p>{{experience.desc}}</p>
         </article>
+        }
+        } @placeholder {
+        <p></p>
+        } @loading (minimum 100ms) {
+        <h4>Loading experiences...</h4>
+        }
     </section>
 
     <section id="goals">
         <h2>Goals</h2>
 
-        <article id="learning">
-            <h3>Forever a student</h3>
-            <p>
-                As I am still young, I yearn to learn. There is so much to learn at every turn, which is why I feel like it would be stupid to pretend to already know everything. Learning is part of the fun of being alive, whether you learn at work, at home or out in the world, learning is what I want to do.
-            </p>
-        </article>
+        @defer (on viewport){
+            @for (goal of goals; track goal.title) {
+            <article [id]="goal.id">
+                <h3>{{goal.title}}</h3>
+                <p>{{goal.desc}}</p>
+            </article>
+            }
+            } @placeholder {
+            <p></p>
+            } @loading (minimum 100ms) {
+            <h4>Loading goals...</h4>
+            }
     </section>
 
     <section id="interests">
         <h2>Interests</h2>
-        
-        <article id="gaming">
-            <h3>I am, a gamer</h3>
-            <p>
-                Being young, into coding, and having a gamer dad, can only lead to one interest: Gaming. I used to play a lot of competetive shooter games, but nowadays I have moved to more "PvE" games where I play with friends and work together towards a common goal. Singleplayer story games have also been a favourite of mine, which is why my favourite game of all time is "Sekiro: Shadows Die Twice".
-            </p>
-        </article>
 
-        <article id="coding">
-            <h3>Coding</h3>
-            <p>
-                As cliché as it sounds, I love coding. One of my goals is to learn more, which is why I love sitting down and learning something new. This portfolio, for example, was my first ever project in Angular that I learnt in my own spare time.
-            </p>
-        </article>
+        @defer (on viewport){
+            @for (interest of interests; track interest.title) {
+            <article [id]="interest.id">
+                <h3>{{interest.title}}</h3>
+                <p>{{interest.desc}}</p>
+            </article>
+            }
+            } @placeholder {
+            <p></p>
+            } @loading (minimum 100ms) {
+            <h4>Loading interests...</h4>
+            }
     </section>
 
     <section id="random-fact">

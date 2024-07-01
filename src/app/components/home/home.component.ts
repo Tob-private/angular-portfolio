@@ -4,7 +4,6 @@ import { FooterComponent } from '../footer/footer.component';
 import { ProjectsService } from '../../services/projects.service';
 import { ProjectType } from '../../types/project.types';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import { CommonModule, NgFor } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 

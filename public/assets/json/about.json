@@ -1,0 +1,47 @@
+{
+    "education": [
+        {
+            "id": "nti",
+            "title": "NTI Stockholm, Stockholm - El och Energi(IT)",
+            "duration": "August 2019 - June 2022",
+            "desc": "During my time at NTI Stockholm, I specialized in web development. This period marked the beginning of my interest in web development, where I learned the basics and foundational skills that have been crucial in my journey."
+        },
+        {
+            "id": "chas-academy",
+            "title": "Chas Academy, Stockholm - Fullstack JavaScript",
+            "duration": "August 2022 - June 2024",
+            "desc": "I studied at Chas Academy's Fullstack JavaScript program. The coursework included learning and mastering agile development methodologies, working with frameworks such as React and Vue.js, and server-side development using Node.js with Express.js. I also gained experience with databases like MongoDB and MySQL, aswell as TypeScript, and developing APIs."
+        }
+
+    ],
+    "experiences": [
+        {
+            "id": "clira",
+            "title": "Clira, Stockholm - Fullstack Developer, Internship",
+            "duration": "January 2024 - May 2024",
+            "desc": "During my internship at Clira, I was responsible for complex problem-solving tasks, maintaining data-export functionalities, and rewriting and restructuring large parts of the existing codebase. I also refactored code to fit into a new infrastructure, enhancing the overall efficiency and performance of their systems."
+        }
+    ],
+    "goals": [
+        {
+            "id": "learning",
+            "title": "Forever a student",
+            "desc": "As I am still young, I yearn to learn. There is so much to learn at every turn, which is why I feel like it would be stupid to pretend to already know everything. Learning is part of the fun of being alive, whether you learn at work, at home or out in the world, learning is what I want to do."
+        }
+    ],
+    "interests": [
+        {
+            "id": "gaming",
+            "title": "I am, a gamer",
+            "desc": "Being young, into coding, and having a gamer dad, can only lead to one interest: Gaming. I used to play a lot of competetive shooter games, but nowadays I have moved to more \"PvE\" games where I play with friends and work together towards a common goal. Singleplayer story games have also been a favourite of mine, which is why my favourite game of all time is \"Sekiro: Shadows Die Twice\"."
+        },
+        {
+            "id": "coding",
+            "title": "Coding",
+            "desc": "As cliché as it sounds, I love coding. One of my goals is to learn more, which is why I love sitting down and learning something new. This portfolio, for example, was my first ever project in Angular that I learnt in my own spare time."
+        }
+    ],
+    "randomFacts": [
+        {}
+    ]
+}
