@@ -15,6 +15,7 @@ import { NgFor } from '@angular/common';
 
 export class ProjectsComponent implements OnInit {
   projects: Array<ProjectType> = []
+
   constructor(public headerService: HeaderService, public projectsService: ProjectsService) {
     this.headerService.setHeaderText("My Project Showcase")
   }
@@ -22,8 +23,5 @@ export class ProjectsComponent implements OnInit {
   async ngOnInit() {
     await this.projectsService.fetchProjects()
     this.projects = this.projectsService.projects
-
-
-
   }
 }

@@ -3,27 +3,42 @@
         {
             "name": "Quire",
             "desc": "My first real project was a group project with 3 classmates. The project's main task was to create a digital notepad website, and subsequently adding features like saving notes, create new notes, textformating, and more",
-            "image": "quire.png"
+            "image": "quire.png",
+            "role": "Developer, Scrum master",
+            "tech": ["HTML", "CSS", "JavaScript"],
+            "impact": "This project served as an intro to Agile methods like Scrum, something I would use a lot in the coming years. It also showed my how important it is for a group to communicate with eachother, and reach out in case you get stuck."
         },
         {
             "name": "Internz",
-            "desc": "In the midst of our React course of my education at Chas Academy, me and a group of classmates were assigned a project to help students find internships, also known as \"LIA\" (Learning While Working).",
-            "image": "internz.png"
+            "desc": "In the midst of our React course of my education at Chas Academy, me and a group of classmates were tasked with creating an app that would help students find internships, also known as \"LIA\" (Learning While Working).",
+            "image": "internz.png",
+            "role": "Developer",
+            "tech": ["React", "Redux", "TypeScript", "Firebase", "Express.js", "Node.js", "TailwindCSS"],
+            "impact": "This was my first fullstack group project, where I learnt about merging the frontend and the backend into one, cohesive project, teaching me about the pros and cons about working on a small project as a big group."
         },
         {
             "name": "Green Hero",
-            "desc": "At the end of my first year on Chas Academy, me and a group of classmates were paired up with other students from different classes for a project. This project was supposed to mimic the real world, in how UX/UI designers, Developers and DevOps work together, giving each class deeper insight into the other classes and what they have learned",
-            "image": "icons/green-hero-icon.png"
+            "desc": "At the end of my first year on Chas Academy, a merged group of designers, developers (me!) and DevOps worked together to create a webapp that encouraged people to \"live a green life\", where they got points for picking up trash from the streets, recycling, and shopping second hand.",
+            "image": "icons/green-hero-icon.png",
+            "role": "Developer",
+            "tech": ["React", "Redux", "TypeScript", "MongoDB", "Mongoose", "Express.js", "Node.js", "TailwindCSS"],
+            "impact": "The Green Hero project taught me how to work in a full scale team, with designers, developers and DevOps. It was also the last project for my first year on the school, which was very stressful, but also educational."
         },
         {
             "name": "PDF Refactoring",
             "desc": "During my internship at Clira, I was tasked with improving the stability and performance of their PDF exports, as new opportunities presented themselves. As we moved to a new infrastructure, I was responsible for refactoring the system we used to generate PDFs.",
-            "image": "icons/pdf-file-icon.svg"
+            "image": "icons/pdf-file-icon.svg",
+            "role": "Lead Developer",
+            "tech": ["React", "Laravel", "PHP", "Blade Templates", "Gotenberg", "TailwindCSS", "PostgreSQL"],
+            "impact": "I consider this to be the most fun project I have been a part of, mostly because I learn so much. I learnt about Laravel's queue, Blade Template do's and dont's, how to organize such a large rewrite and, most importantly, when to give up and ask for help."
         },
         {
             "name": "Portfolio",
             "desc": "After my education at Chas Academy ended, I decided to learn a new framework and make something with it. That \"something\" turned into this portfolio website.",
-            "image": "briefcase.jpg"
+            "image": "briefcase.jpg",
+            "role": "Solo Developer, Designer",
+            "tech": ["Angular", "CSS", "TypeScript"],
+            "impact": "Being my first solo project, as well as my first project using Angular, it was a big learning experience. I learnt so much about Angular, as well as how to structure up what to do."
         }
     ]
 }

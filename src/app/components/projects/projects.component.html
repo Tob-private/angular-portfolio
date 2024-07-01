@@ -1,14 +1,23 @@
 <main>
     <h2>These are some of my projects</h2>
     <section id="projects">
-        @defer (on viewport){
+        @defer (on immediate){
 
         <article *ngFor="let project of projects; let i=index" [style.grid-area]="'element'+(i+1)">
+
             <h3>{{project.name}}</h3>
-            <h4>Role: <!-- {{project.role}} --></h4>
-            <p>
-               <b>Description:</b> {{project.desc}}
-            </p>
+
+            <h4>Role: {{project.role}}</h4>
+
+            <p><b>Description:</b> {{project.desc}}</p>
+            
+            <p><b>Tech used:</b></p>
+            <ul>
+                <li *ngFor="let item of project.tech">{{item}}</li>
+            </ul>
+
+            <p><b>Impact: </b>{{project.impact}}</p>
+
             <img src={{project.image}} alt="{{project.name}} image">
         </article>
 

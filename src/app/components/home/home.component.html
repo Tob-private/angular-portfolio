@@ -16,7 +16,7 @@
             JavaScript, CSS and HTML. Here are some of them:
         </p>
         <div id="showcase">
-            @defer (on viewport){
+            @defer (on immediate){
             @for (project of projects; track project.name) {
             <app-project-card [project]="project"></app-project-card>
             }
