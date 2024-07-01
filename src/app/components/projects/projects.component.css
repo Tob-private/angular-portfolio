@@ -1,0 +1,23 @@
+#projects {
+    padding: 30px;
+    display: grid;
+    grid-template: repeat(6, 200px) / repeat(10, 1fr);
+    grid-template-areas: 
+    "element1 element1 .        .        element2 element2 .        .        element3 element3"
+    "element1 element1 element4 element4 element2 element2 element5 element5 element3 element3"
+    "element1 element1 element4 element4 element2 element2 element5 element5 element3 element3"
+    "element1 element1 element4 element4 element2 element2 element5 element5 element3 element3"
+    "element1 element1 element4 element4 element2 element2 element5 element5 element3 element3"
+    ".        .        element4 element4 .        .        element5 element5 .        .       ";
+    gap: 10px;
+    margin: 50px auto;
+}
+
+#projects>article {
+    background-color: var(--accent-background);
+    padding: 10px;
+}
+
+article>img {
+    width: 80%;
+}

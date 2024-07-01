@@ -1,1 +1,21 @@
-<p>projects works!</p>
+<main>
+    <h2>These are some of my projects</h2>
+    <section id="projects">
+        @defer (on viewport){
+
+        <article *ngFor="let project of projects; let i=index" [style.grid-area]="'element'+(i+1)">
+            <h3>{{project.name}}</h3>
+            <h4>Role: <!-- {{project.role}} --></h4>
+            <p>
+               <b>Description:</b> {{project.desc}}
+            </p>
+            <img src={{project.image}} alt="{{project.name}} image">
+        </article>
+
+        } @placeholder {
+        <p>Future projects</p>
+        } @loading (minimum 500ms) {
+        <h4>Loading projects...</h4>
+        }
+    </section>
+</main>
