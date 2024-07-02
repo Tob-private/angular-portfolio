@@ -1,0 +1,91 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        ". title title title ."
+        ". articleEven articleEven articleEven ."
+        ". articleOdd articleOdd articleOdd .";
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+h2 {
+    grid-area: title;
+    text-align: center;
+}
+
+section>article {
+    margin-bottom: 150px;
+    column-gap: 20px;
+}
+
+section>article:nth-child(even) {
+    grid-area: articleEven;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "articleTitle articleTitle ."
+        "articleDuration articleDuration ."
+        "articleText articleText articleImage";
+    place-items: center;
+}
+
+section>article:nth-child(odd) {
+    grid-area: articleOdd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        ". articleTitle articleTitle"
+        ". articleDuration articleDuration"
+        "articleImage articleText articleText";
+    place-items: center;
+}
+
+section>article>h3 {
+    grid-area: articleTitle;
+}
+
+section>article>h4 {
+    grid-area: articleDuration;
+    height: min-content;
+    margin: 0;
+    justify-self: start;
+}
+
+section>article>p {
+    grid-area: articleText;
+    width: 100%;
+}
+
+section>article>img {
+    grid-area: articleImage;
+    place-items: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#education img {
+    border-radius: 50%;
+}
+
+#random-fact {
+    grid-template: repeat(3, 100px) / repeat(3, 1fr);
+    grid-template-areas:
+        "factTitle factTitle factTitle"
+        " . factText . "
+        " .factButton ."
+    ;
+    place-items: center;
+}
+
+#random-fact>h2 {
+    grid-area: factTitle;
+}
+
+#random-fact>p {
+    grid-area: factText;
+}
+
+#random-fact>button {
+    grid-area: factButton;
+}

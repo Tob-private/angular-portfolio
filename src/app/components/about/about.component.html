@@ -7,6 +7,7 @@
             <h3>{{education.title}}</h3>
             <h4>{{education.duration}}</h4>
             <p>{{education.desc}}</p>
+            <img src={{education.image}} alt="{{education.title}} logo">
         </article>
         }
         } @placeholder {
@@ -25,6 +26,7 @@
             <h3>{{experience.title}}</h3>
             <h4>{{experience.duration}}</h4>
             <p>{{experience.desc}}</p>
+            <img src={{experience.image}} alt="{{experience.title}} logo">
         </article>
         }
         } @placeholder {
@@ -38,38 +40,42 @@
         <h2>Goals</h2>
 
         @defer (on immediate){
-            @for (goal of goals; track goal.title) {
-            <article [id]="goal.id">
-                <h3>{{goal.title}}</h3>
-                <p>{{goal.desc}}</p>
-            </article>
-            }
-            } @placeholder {
-            <p></p>
-            } @loading (minimum 500ms) {
-            <h4>Loading goals...</h4>
-            }
+        @for (goal of goals; track goal.title) {
+        <article [id]="goal.id">
+            <h3>{{goal.title}}</h3>
+            <p>{{goal.desc}}</p>
+            <img src={{goal.image}} alt="{{goal.title}} logo">
+            
+        </article>
+        }
+        } @placeholder {
+        <p></p>
+        } @loading (minimum 500ms) {
+        <h4>Loading goals...</h4>
+        }
     </section>
 
     <section id="interests">
         <h2>Interests</h2>
 
         @defer (on immediate){
-            @for (interest of interests; track interest.title) {
-            <article [id]="interest.id">
-                <h3>{{interest.title}}</h3>
-                <p>{{interest.desc}}</p>
-            </article>
-            }
-            } @placeholder {
-            <p></p>
-            } @loading (minimum 500ms) {
-            <h4>Loading interests...</h4>
-            }
+        @for (interest of interests; track interest.title) {
+        <article [id]="interest.id">
+            <h3>{{interest.title}}</h3>
+            <p>{{interest.desc}}</p>
+            <img src={{interest.image}} alt="{{interest.title}} logo">
+            
+        </article>
+        }
+        } @placeholder {
+        <p></p>
+        } @loading (minimum 500ms) {
+        <h4>Loading interests...</h4>
+        }
     </section>
 
     <section id="random-fact">
-        <h3>Random fact about me</h3>
+        <h2>Random fact about me</h2>
         <p>{{randomizedFact}}</p>
         <button mat-button (click)="generateRandomFact()">Generate new fact</button>
     </section>
