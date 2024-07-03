@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderService } from '../../services/header.service';
 import { ProjectsService } from '../../services/projects.service';
 import { ProjectType } from '../../types/project.types';
-import { ProjectCardComponent } from '../project-card/project-card.component';
 import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ProjectCardComponent, NgFor],
+  imports: [NgFor],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
