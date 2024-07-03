@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+section {
+}
+
+section>a {
+    display: block;
+    margin-bottom: 20px;
+}
