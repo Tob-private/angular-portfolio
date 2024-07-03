@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderService } from '../../services/header.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-
+  constructor(public headerService: HeaderService) {
+    headerService.setHeaderText("Where you can find me")
+  }
 }
