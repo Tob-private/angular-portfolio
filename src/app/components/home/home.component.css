@@ -58,9 +58,9 @@ main>* {
 #contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    ". . title ."
-    ". . button .";
+    grid-template-areas:
+        ". . title ."
+        ". . button .";
     text-align: end;
 }
 
@@ -75,4 +75,55 @@ main>* {
     width: 40%;
     margin-left: 50%;
     padding: 40px 0;
+}
+
+@media (max-width: 1300px) {
+    #intro {
+        grid-template-areas:
+            "title title."
+            "text text.";
+    }
+
+    #projects {
+        grid-template-areas:
+            ". title title ."
+            ". text text ."
+            "showcase showcase showcase showcase";
+    }
+
+    #contact {
+        grid-template-areas:
+            ".  title title ."
+            ". button button .";
+    }
+}
+
+@media (max-width: 400px) {
+    #intro {
+        grid-template-areas:
+            "title title title"
+            "text text text";
+    }
+
+    #projects {
+        grid-template-areas:
+            "title title title title"
+            "text text text text"
+            "showcase showcase showcase showcase";
+    }
+
+    #contact {
+        grid-template-areas:
+            "title  title title title"
+            "button button button button";
+            text-align: center;
+            font-size: .9rem;
+
+    }
+
+    #contact>button {
+        width: 60%;
+        margin-left: 30%;
+        padding: 40px 0;
+    }
 }
