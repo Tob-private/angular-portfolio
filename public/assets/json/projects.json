@@ -30,7 +30,7 @@
             "image": "icons/pdf-file-icon.svg",
             "role": "Lead Developer",
             "tech": ["React", "Laravel", "PHP", "Blade Templates", "Gotenberg", "TailwindCSS", "PostgreSQL"],
-            "impact": "I consider this to be the most fun project I have been a part of, mostly because I learn so much. I learnt about Laravel's queue, Blade Template do's and dont's, how to organize such a large rewrite and, most importantly, when to give up and ask for help."
+            "impact": "I consider this to be the most fun project I have been a part of, mostly because I learnt so much. I learnt about Laravel's queue, Blade Template do's and dont's, how to organize such a large rewrite and, most importantly, when to give up and ask for help."
         },
         {
             "name": "Portfolio",
